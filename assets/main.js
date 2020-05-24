@@ -35,14 +35,14 @@ let Exponentiation = power(3, 4)
 powerkata.innerText = Exponentiation
 
 
-// function factorial() {
-//     let result = 1
-//     for (let i = 0; i < n; i++){
-//         result = 
-//         // console.log(result)
-//     }
-// return result
-// }
+function fact(n) {
+    let result = 1
+    for (let i = n; i > 0; i--){
+        result = multiply(result,i)
+        // console.log(result)
+    }
+return result
+}
 
-// let factorial = fact(2, 8)
-// factorialkata.innerText = fact
+let factorial = fact(4)
+factorialkata.innerText = factorial
